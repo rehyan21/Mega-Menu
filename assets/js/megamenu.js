@@ -82,7 +82,7 @@ $.fn.megaMenu = function(options){
     mainLinks.css({"border-color":""});
   });
 
-  // If a user didn't defined menu behaviour 
+  // If a user didn't defined menu behaviour
   if (settings.menuBehaviour === "") {
     settings.menuBehaviour = "click";
   }
@@ -198,7 +198,6 @@ $.fn.megaMenu = function(options){
       color:` + settings.textHighlighterColor +
     `}`);
   }
-  // console.log(defaults.textHighlighter);
 
     // Get menus IDs
     subMenu.each(function(i){
@@ -209,5 +208,18 @@ $.fn.megaMenu = function(options){
     if (settings.animation === true) {
       subMenu.addClass(settings.animationClass);
     }
+
+    // Mobile Nav icon
+    $(".mobile-nav-icon a").click(function(){
+      $(".follow-highlighter").remove();
+      if ($(".main-links").hasClass("active")) {
+        $(".main-links").removeClass("active");
+        $(".menu-dropdown").hide();
+      }
+      else {
+        $(".main-links").addClass("active");
+        $(".menu-dropdown").show();
+      }
+    });
 
   }

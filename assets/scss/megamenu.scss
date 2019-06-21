@@ -1,5 +1,7 @@
 // Global Style
-
+* {
+    box-sizing: border-box;
+}
 body{
   margin: 0;
   font-family: 'PT Sans', sans-serif;
@@ -15,6 +17,9 @@ li{
   display: block;
   float: left;
   width: 100%;
+  .mobile-nav-icon{
+    display: none;
+  }
   &.sticky-header{
     position: fixed;
     top: 0;
@@ -141,6 +146,9 @@ li{
     }
   }
   .menu-dropdown{
+    display: block;
+    float: left;
+    width: 100%;
     .menu-item-wrapper{
       display: none;
       box-shadow: 0px 1px 4px #dadada;
@@ -162,6 +170,45 @@ li{
         }
         a{
           color: #7b7b7b;
+        }
+      }
+    }
+  }
+}
+
+@media only screen and (max-width:560px) {
+  .follow-highlighter{
+    display: none;
+  }
+  .mega-menu{
+    .mobile-nav-icon{
+      position: relative;
+      z-index: 91;
+      display: block;
+      border: none;
+      padding: 25px 40px;
+      border-bottom: 1px solid #dadada;
+      a{
+        border: none;
+      }
+    }
+    .main-links{
+      display: none;
+      padding: 25px 40px;
+      &.active{
+        display: block;
+      }
+      ul{
+        flex-wrap: wrap;
+        padding: 0;
+        width: 100%;
+        // display: none;
+        li{
+          width: 100%;
+          margin-right: 0;
+          a{
+            padding: 10px 0px;
+          }
         }
       }
     }
