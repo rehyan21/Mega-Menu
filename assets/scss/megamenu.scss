@@ -176,14 +176,24 @@ li{
   }
 }
 
-@media only screen and (max-width:560px) {
+@media only screen and (max-width:767px) {
   .follow-highlighter{
     display: none;
   }
   .mega-menu{
+    &.sticky-header{
+      position: relative;
+      .mobile-nav-icon{
+        position: fixed;
+        top: 0;
+        width: 100%;
+        z-index: 99;
+      }
+    }
     .mobile-nav-icon{
       position: relative;
       z-index: 91;
+      background-color: #fff;
       display: block;
       border: none;
       padding: 25px 40px;
@@ -209,6 +219,14 @@ li{
           a{
             padding: 10px 0px;
           }
+        }
+      }
+    }
+    .menu-dropdown{
+      .menu-item-wrapper{
+        max-height: inherit;
+        &.active{
+          display: block;
         }
       }
     }

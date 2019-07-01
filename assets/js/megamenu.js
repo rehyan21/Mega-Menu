@@ -28,6 +28,7 @@ $.fn.megaMenu = function(options){
   },defaults, options)
 
 
+
   var element = settings.selector;
   var mainLinks = $(".main-links ul li a");
   var subMenu = $(".menu-dropdown .menu-item-wrapper");
@@ -220,6 +221,22 @@ $.fn.megaMenu = function(options){
         $(".main-links").addClass("active");
         $(".menu-dropdown").show();
       }
+    });
+
+    // Responsive options
+
+    $(window).resize(function() {
+     if ($(window).width() < 768) {
+
+       // Get main-links marging top as height of mobile-nav-icon
+       if ($(".mega-menu").hasClass("sticky-header")) {
+         $(".main-links").css({"margin-top": $(".mobile-nav-icon").outerHeight()+"px"});
+       }
+
+     }
+     else {
+       $(".main-links").css({"margin-top": "0px"});
+     }
     });
 
   }
