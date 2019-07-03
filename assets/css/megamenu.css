@@ -144,6 +144,11 @@ li {
 .mega-menu .menu-dropdown .menu-item-wrapper li a {
   color: #7b7b7b;
 }
+.mega-menu .menu-dropdown .back-link {
+  display: none;
+  margin-bottom: 30px;
+  color: blue;
+}
 
 @media only screen and (max-width: 767px) {
   .follow-highlighter {
@@ -152,6 +157,20 @@ li {
 
   .mega-menu.sticky-header {
     position: relative;
+  }
+  .mega-menu.sticky-header.responsive-menu .main-links {
+    margin-top: 71px;
+  }
+  .mega-menu.sticky-header.responsive-menu .menu-dropdown {
+    position: fixed;
+    top: 71px;
+    z-index: 99;
+    background: white;
+    max-height: 100vh;
+    overflow: scroll;
+  }
+  .mega-menu.sticky-header.responsive-menu .menu-dropdown .menu-item-wrapper .back-link {
+    display: block;
   }
   .mega-menu.sticky-header .mobile-nav-icon {
     position: fixed;
@@ -189,6 +208,9 @@ li {
   }
   .mega-menu .main-links ul li a {
     padding: 10px 0px;
+  }
+  .mega-menu .main-links ul li a.highlight {
+    border: none;
   }
   .mega-menu .menu-dropdown .menu-item-wrapper {
     max-height: inherit;

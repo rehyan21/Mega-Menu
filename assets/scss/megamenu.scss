@@ -173,6 +173,11 @@ li{
         }
       }
     }
+    .back-link{
+      display: none;
+      margin-bottom: 30px;
+      color: blue;
+    }
   }
 }
 
@@ -183,6 +188,24 @@ li{
   .mega-menu{
     &.sticky-header{
       position: relative;
+      &.responsive-menu{
+        .main-links{
+          margin-top: 71px;
+        }
+        .menu-dropdown{
+          position: fixed;
+          top: 71px;
+          z-index: 99;
+          background: white;
+          max-height: 100vh;
+          overflow: scroll;
+          .menu-item-wrapper{
+            .back-link{
+              display: block;
+            }
+          }
+        }
+      }
       .mobile-nav-icon{
         position: fixed;
         top: 0;
@@ -218,6 +241,9 @@ li{
           margin-right: 0;
           a{
             padding: 10px 0px;
+            &.highlight{
+              border: none;
+            }
           }
         }
       }

@@ -27,8 +27,6 @@ $.fn.megaMenu = function(options){
     animationClass: "",
   },defaults, options)
 
-
-
   var element = settings.selector;
   var mainLinks = $(".main-links ul li a");
   var subMenu = $(".menu-dropdown .menu-item-wrapper");
@@ -223,20 +221,36 @@ $.fn.megaMenu = function(options){
       }
     });
 
+
     // Responsive options
+
+    $(".menu-item-wrapper").prepend('<a href="#" class="back-link">Back</a>');
 
     $(window).resize(function() {
      if ($(window).width() < 768) {
 
        // Get main-links marging top as height of mobile-nav-icon
        if ($(".mega-menu").hasClass("sticky-header")) {
+         $(".mega-menu").addClass("responsive-menu");
          $(".main-links").css({"margin-top": $(".mobile-nav-icon").outerHeight()+"px"});
+
+         // $(".menu-item-wrapper").prepend('<a href="#" class="back-link">Back</a>');
+
        }
 
      }
      else {
        $(".main-links").css({"margin-top": "0px"});
+       // $(".back-link").remove();
+      // $(".mega-menu").removeClass("responsive-menu");
      }
     });
+
+    $(document).ready(function(){
+      $(".back-link").on('click', function(){
+        mainLinks.trigger('click');
+        $(mainLinks[mainLinks.length - 1]).trigger('click');
+      });
+    })
 
   }
