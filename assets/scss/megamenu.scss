@@ -197,8 +197,6 @@ li{
           top: 71px;
           z-index: 99;
           background: white;
-          max-height: 100vh;
-          overflow: scroll;
           .menu-item-wrapper{
             .back-link{
               display: block;
@@ -250,7 +248,8 @@ li{
     }
     .menu-dropdown{
       .menu-item-wrapper{
-        max-height: inherit;
+        max-height: 100vh;
+        overflow: scroll;
         &.active{
           display: block;
         }

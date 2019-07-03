@@ -166,8 +166,6 @@ li {
     top: 71px;
     z-index: 99;
     background: white;
-    max-height: 100vh;
-    overflow: scroll;
   }
   .mega-menu.sticky-header.responsive-menu .menu-dropdown .menu-item-wrapper .back-link {
     display: block;
@@ -213,7 +211,8 @@ li {
     border: none;
   }
   .mega-menu .menu-dropdown .menu-item-wrapper {
-    max-height: inherit;
+    max-height: 100vh;
+    overflow: scroll;
   }
   .mega-menu .menu-dropdown .menu-item-wrapper.active {
     display: block;
