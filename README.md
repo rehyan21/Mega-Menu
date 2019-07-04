@@ -12,6 +12,12 @@ Importing CSS file in your HTML
 
 <pre>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;build/css/megamenu.min.css&#x22;&#x3E;</pre>
 
+Importing CSS with <code>CDN</code>
+
+<pre>
+ &lt;link rel=&quot;stylesheet&quot; href=&quot;https://raw.githubusercontent.com/rehyan21/Mega-Menu/master/build/css/megamenu.min.css&quot;&gt;
+</pre>
+
 Importing JQuery file in your HTML
 
 <pre>&#x3C;script src=&#x22;https://cdnjs.cloudflare.com/ajax/libs/jquery/3.1.0/jquery.min.js&#x22;&#x3E;&#x3C;/script&#x3E;</pre>
@@ -20,6 +26,14 @@ Importing Plugin JS file below JQuery in your HTML
 
 <pre>
  &#x3C;script src=&#x22;build/js/megamenu.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;
+</pre>
+
+Importing JS with <code>CDN</code>
+
+<pre>
+
+&lt;script src=&quot;https://raw.githubusercontent.com/rehyan21/Mega-Menu/master/build/js/megamenu.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+
 </pre>
 
 Then, add this <code>HTML</code> structure
