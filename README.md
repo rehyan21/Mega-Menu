@@ -8,8 +8,6 @@ This plugin includes all final assets in <code>build</code> directory. There you
 
 <h4>How to get stared ?</h4>
 
-Please import CSS file in your plugin like this
+Importing CSS file in your HTML
 
-<pre>
-  <link rel="stylesheet" href="build/css/megamenu.min.css"> 
-</pre>
+<pre>&#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;build/css/megamenu.min.css&#x22;&#x3E;</pre>
