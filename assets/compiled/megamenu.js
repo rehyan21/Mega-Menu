@@ -12,7 +12,7 @@ $.fn.megaMenu = function (options) {
   };
   var settings = $.extend({
     menuBehaviour: "click",
-    stickyHeder: true,
+    stickyHeader: true,
     selector: $(this),
     caret: "",
     caretArrows: [{
@@ -37,7 +37,7 @@ $.fn.megaMenu = function (options) {
   var caretUp = defaults.caretArrows[0].up;
   var caretDown = defaults.caretArrows[0].down; // Sticky Heder
 
-  if (settings.stickyHeder === false) {
+  if (settings.stickyHeader === false) {
     $(".mega-menu").removeClass("sticky-header");
   } else {
     $(".mega-menu").addClass("sticky-header");
