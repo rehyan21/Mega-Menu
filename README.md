@@ -19,10 +19,45 @@ Importing JQuery file in your HTML
 Importing Plugin JS file below JQuery in your HTML
 
 <pre>
-  &#x3C;script src=&#x22;build/js/megamenu.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;
+ &#x3C;script src=&#x22;build/js/megamenu.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;
+</pre>
+
+Then, add this <code>HTML</code> structure
+
+<pre>
+  &#x3C;div class=&#x22;mega-menu menuClass&#x22;&#x3E;
+    &#x3C;div class=&#x22;mobile-nav-icon&#x22;&#x3E;
+      &#x3C;a class=&#x22;&#x22; href=&#x22;#&#x22;&#x3E;
+        &#x3C;span class=&#x22;fa fa-bars&#x22;&#x3E;&#x3C;/span&#x3E;
+      &#x3C;/a&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;main-links&#x22;&#x3E;
+      &#x3C;ul&#x3E;
+        &#x3C;li&#x3E;&#x3C;a data-submenu=&#x22;products&#x22; href=&#x22;#&#x22;&#x3E;Products&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a data-submenu=&#x22;career&#x22; href=&#x22;#&#x22;&#x3E;Brands&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+    &#x3C;/div&#x3E;
+    &#x3C;div class=&#x22;menu-dropdown&#x22;&#x3E;
+      &#x3C;ul class=&#x22;menu-item-wrapper&#x22; id=&#x22;products&#x22;&#x3E;
+        &#x3C;li class=&#x22;link-category&#x22;&#x3E;Men&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Nike Shoe&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Puma Boots&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+      &#x3C;ul class=&#x22;menu-item-wrapper&#x22; id=&#x22;career&#x22;&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Caterpillar&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+        &#x3C;li&#x3E;&#x3C;a href=&#x22;#&#x22;&#x3E;Fossil&#x3C;/a&#x3E;&#x3C;/li&#x3E;
+      &#x3C;/ul&#x3E;
+    &#x3C;/div&#x3E;
+  &#x3C;/div&#x3E;
 </pre>
 
 Now all set to start using this amazing plugin !!
+
+<h4>Optional</h4>
+
+1. You have option to import <code>animated.css</code> library to animate mega-menu dropdowns using its classes
+
+2. You have option to import <code>font-awesome.css</code> library to add caret icon using its classes
 
 <br/>
 
@@ -115,6 +150,47 @@ Initiate <code>megaMenu()</code> function on your JS code like this
   </tr>
 </table>
 
+<h3>Examples</h3>
+
+1. Header default set to sticky. if you wish to disable sticky header.
+
+<pre>
+  $(&#x22;.mega-menu&#x22;).megaMenu({
+    stickyHeader: false
+  })
+</pre>
+
+2. To set custom caret icon using <code>font-awesome.css</code>
+
+<pre>
+  $(&#x22;.mega-menu&#x22;).megaMenu({
+    caret:true,
+    caretArrows: [{
+      up:&#x22;fa fa-angle-up&#x22;,
+      down:&#x22;fa fa-angle-down&#x22;,
+    }],
+  })
+</pre>
+
+3. To set custom caret icon using image or SVG. 
+
+<pre>
+  $(&#x22;.mega-menu&#x22;).megaMenu({
+    caret:true,
+    caretArrows: [{
+      upUrl: &#x22;assets/up-arrow.png&#x22;,
+      downUrl: &#x22;assets/down-arrow.png&#x22;,
+    }],
+  })
+</pre>
+
+4. To set custom animation using <code>animate.css</code> or pass animation class over <code>animationClass</code> property.
+<pre>
+  $(&#x22;.mega-menu&#x22;).megaMenu({
+    animation:true,
+    animationClass:"animated fadeIn",
+  })
+</pre>
 
 - Mention about carretarrows font-icon features
 - Mention about animation add classes features
