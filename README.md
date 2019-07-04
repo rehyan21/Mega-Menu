@@ -10,4 +10,4 @@ This plugin includes all final assets in <code>build</code> directory. There you
 
 Please import CSS file in your plugin like this
 
-<pre> <link rel="stylesheet" href="build/css/megamenu.min.css"> </pre>
+<xmp> <link rel="stylesheet" href="build/css/megamenu.min.css"> </xmp>
