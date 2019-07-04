@@ -24,8 +24,97 @@ Importing Plugin JS file below JQuery in your HTML
 
 Now all set to start using this amazing plugin !!
 
+<br/>
+
 <h3>Usage</h3>
 
+Initiate <code>megaMenu()</code> function on your JS code like this
+
+<pre>
+  $(&#x22;.mega-menu&#x22;).megaMenu({
+    
+  })
+</pre>
+
+<br/>
+
+<h3>Options</h3>
+
+<table>
+  <tr>
+    <th>Options</th>
+    <th>Type</th>
+    <th>Default</th>
+    <th>Value<th>
+  </tr>
+  <tr>
+    <td>caret</td>
+    <td>Boolean</td>
+    <td>false</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>caretArrows</td>
+    <td>Array</td>
+    <td>up: "caret-up" <br> down: "caret-down"</td>
+    <td>up, <br> down, <br>upUrl, <br> downUrl</td>
+  </tr>
+  <tr>
+    <td>stickyHeader</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>false</td>
+  </tr>
+  <tr>
+    <td>menuBehaviour</td>
+    <td>string</td>
+    <td>click</td>
+    <td>Mouse Events</td>
+  </tr>
+  <tr>
+    <td>highlighter</td>
+    <td>Boolean</td>
+    <td>true</td>
+    <td>false</td>
+  </tr>
+  <tr>
+    <td>highlightColor</td>
+    <td>String</td>
+    <td>red</td>
+    <td>Any color with <code>#HEX</code> or by name</td>
+  </tr>
+  <tr>
+    <td>followingHighlighter</td>
+    <td>Boolean</td>
+    <td>false</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>textHighlighter</td>
+    <td>Boolean</td>
+    <td>false</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>textHighlighterColor</td>
+    <td>String</td>
+    <td>red</td>
+    <td>Any color with <code>#HEX</code> or by name</td>
+  </tr>
+  <tr>
+    <td>animation</td>
+    <td>Boolean</td>
+    <td>false</td>
+    <td>true</td>
+  </tr>
+  <tr>
+    <td>animationClass</td>
+    <td>String</td>
+    <td>Need to set animation:true</td>
+    <td>Any custom animation class name or animated.css</td>
+  </tr>
+</table>
 
 
-sdfdsf
+- Mention about carretarrows font-icon features
+- Mention about animation add classes features
