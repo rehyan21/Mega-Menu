@@ -80,7 +80,7 @@ Initiate <code>megaMenu()</code> function on your JS code like this
     <th>Options</th>
     <th>Type</th>
     <th>Default</th>
-    <th>Value<th>
+    <th>Value</th>
   </tr>
   <tr>
     <td>caret</td>
@@ -160,7 +160,7 @@ Initiate <code>megaMenu()</code> function on your JS code like this
   })
 </pre>
 
-2. To set custom caret icon using <code>font-awesome.css</code>
+2. To set custom <code>caret</code> icon using <code>font-awesome.css</code>
 
 <pre>
   $(&#x22;.mega-menu&#x22;).megaMenu({
@@ -172,7 +172,7 @@ Initiate <code>megaMenu()</code> function on your JS code like this
   })
 </pre>
 
-3. To set custom caret icon using image or SVG. 
+3. To set custom <code>caret</code> icon using image or SVG. 
 
 <pre>
   $(&#x22;.mega-menu&#x22;).megaMenu({
@@ -191,6 +191,3 @@ Initiate <code>megaMenu()</code> function on your JS code like this
     animationClass:"animated fadeIn",
   })
 </pre>
-
-- Mention about carretarrows font-icon features
-- Mention about animation add classes features
