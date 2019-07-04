@@ -10,7 +10,7 @@ $.fn.megaMenu = function(options){
   };
   var settings = $.extend ({
     menuBehaviour: "click",
-    stickyHeder: true,
+    stickyHeader: true,
     selector: $(this),
     caret:"",
     caretArrows: [{
@@ -39,7 +39,7 @@ $.fn.megaMenu = function(options){
 
   // Sticky Heder
 
-  if (settings.stickyHeder === false) {
+  if (settings.stickyHeader === false) {
     $(".mega-menu").removeClass("sticky-header");
   }
   else {
