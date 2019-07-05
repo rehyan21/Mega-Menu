@@ -172,6 +172,15 @@ li{
           color: #7b7b7b;
         }
       }
+      &.dropdown{
+        float: left;
+        width: auto;
+        padding: 25px;
+        position: absolute;
+        &.active{
+          display: block;
+        }
+      }
     }
     .back-link{
       display: none;

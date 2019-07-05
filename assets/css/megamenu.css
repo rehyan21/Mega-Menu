@@ -144,6 +144,15 @@ li {
 .mega-menu .menu-dropdown .menu-item-wrapper li a {
   color: #7b7b7b;
 }
+.mega-menu .menu-dropdown .menu-item-wrapper.dropdown {
+  float: left;
+  width: auto;
+  padding: 25px;
+  position: absolute;
+}
+.mega-menu .menu-dropdown .menu-item-wrapper.dropdown.active {
+  display: block;
+}
 .mega-menu .menu-dropdown .back-link {
   display: none;
   margin-bottom: 30px;

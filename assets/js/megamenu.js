@@ -151,6 +151,12 @@ $.fn.megaMenu = function(options){
 
     });
 
+    // Normal Dropdown Position
+
+    // if (subMenu.hasClass("dropdown") ) {
+    //   console.log(selectElementwithId);
+    // }
+
   });
 
 
