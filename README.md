@@ -6,7 +6,7 @@
 
 This plugin all about mega menu on your beautiful projects. it helps you to massive menu items under a roof.
 
-Please view codepen <a target="_blank" href="https://codepen.io/rehyanuiux/pen/mZjYBK">demo</a>
+Please checkout codepen <a target="_blank" href="https://codepen.io/rehyanuiux/pen/mZjYBK">demo</a>
 
 <h3>How It Works ?</h3>
 
