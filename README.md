@@ -4,7 +4,9 @@
 
 # JQuery Mega Menu Plugin
 
-This plugin all about mega menu on your beautiful projects.
+This plugin all about mega menu on your beautiful projects. it helps you to massive menu items under a roof.
+
+Please view codepen <a target="_blank" href="https://codepen.io/rehyanuiux/pen/mZjYBK">demo</a>
 
 <h3>How It Works ?</h3>
 
@@ -19,7 +21,7 @@ Importing CSS file in your HTML
 Importing CSS with <code>CDN</code>
 
 <pre>
- &lt;link rel=&quot;stylesheet&quot; href=&quot;https://raw.githubusercontent.com/rehyan21/Mega-Menu/master/build/css/megamenu.min.css&quot;&gt;
+ &#x3C;link rel=&#x22;stylesheet&#x22; href=&#x22;https://cdn.jsdelivr.net/gh/rehyan21/Mega-Menu/build/css/megamenu.min.css&#x22;&#x3E;
 </pre>
 
 Importing JQuery file in your HTML
@@ -36,7 +38,7 @@ Importing JS with <code>CDN</code>
 
 <pre>
 
-&lt;script src=&quot;https://raw.githubusercontent.com/rehyan21/Mega-Menu/master/build/js/megamenu.min.js&quot; type=&quot;text/javascript&quot;&gt;&lt;/script&gt;
+&#x3C;script src=&#x22;https://cdn.jsdelivr.net/gh/rehyan21/Mega-Menu/build/js/megamenu.min.js&#x22; type=&#x22;text/javascript&#x22;&#x3E;&#x3C;/script&#x3E;
 
 </pre>
 
