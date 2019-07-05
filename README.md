@@ -211,3 +211,6 @@ Initiate <code>megaMenu()</code> function on your JS code like this
     animationClass:"animated fadeIn",
   })
 </pre>
+
+
+<h1>Thanks</h1>
