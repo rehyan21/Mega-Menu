@@ -149,13 +149,14 @@ $.fn.megaMenu = function(options){
         $(this).css({"border-color": settings.highlightColor});
       }
 
+      // Normal Dropdown Positioning
+      if (subMenu.hasClass("dropdown") ) {
+        var dropDownforClickedLink = $("#"+iDofSubMenus[findPositionOfSubmenus]+".dropdown");
+        dropDownforClickedLink.css({"left": $(this).offset().left })
+      }
+
     });
 
-    // Normal Dropdown Position
-
-    // if (subMenu.hasClass("dropdown") ) {
-    //   console.log(selectElementwithId);
-    // }
 
   });
 

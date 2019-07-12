@@ -17,6 +17,7 @@ li{
   display: block;
   float: left;
   width: 100%;
+  box-shadow: 0px 1px 4px #dadada;
   .mobile-nav-icon{
     display: none;
   }
@@ -30,11 +31,11 @@ li{
     border-bottom: 4px solid white;
   }
   ul{
-    padding: 0 40px;
+    // padding: 0 40px;
   }
   .main-links{
     background-color: #ffffff;
-    box-shadow: 0px 1px 4px #dadada;
+    border-bottom: 1px solid #dedede;
     z-index: 9;
     position: relative;
     display: block;
@@ -151,34 +152,91 @@ li{
     width: 100%;
     .menu-item-wrapper{
       display: none;
-      box-shadow: 0px 1px 4px #dadada;
+      padding: 45px;
       margin: 0;
-      padding:40px;
-      max-height: 210px;
+      float: left;
+      width: 100%;
       flex-wrap: wrap;
-      flex-direction: column;
+      flex-direction: row;
       &.active{
         display: flex;
       }
       li{
-        margin-bottom: 15px;
-        &.link-category{
-          font-weight: bold;
+        margin-right: 30px;
+      }
+      .category-wrapper{
+        float: left;
+        display: inline-block;
+        // margin-right: 50px;
+        margin-left: 0;
+        &:last-child{
+          margin-right: 0;
         }
+        .item-category{
+          font-weight: 400;
+          color: black;
+          position: relative;
+          margin-bottom: 15px;
+          display: block;
+          padding: 0px 15px;
+          &:before{
+            content: "";
+            position: absolute;
+            width: 3px;
+            height: 80%;
+            background-color: red;
+            left: 0px;
+            /* line-height: 100%; */
+            top: 50%;
+            transform: translateY(-50%);
+          }
+        }
+        ul{
+          display: inline-block;
+          float: left;
+          // margin-right: 30px;
+        }
+      }
+      li{
+        color: #777777;
+        display: block;
+        height: auto;
         &:last-child{
           margin-bottom: 0px;
         }
         a{
           color: #7b7b7b;
+          padding: 15px 0px;
+          display: block;
+          height: auto;
+          border-bottom: none;
+          &:last-child{
+            padding-bottom: 0;
+          }
+          &:hover{
+            color: black;
+          }
+        }
+        ul{
+          padding: 0;
         }
       }
       &.dropdown{
+        background-color: white;
         float: left;
         width: auto;
         padding: 25px;
         position: absolute;
+        box-shadow: 0px 1px 4px #dadada;
         &.active{
           display: block;
+        }
+        li{
+          // margin-bottom: 20px;
+          margin-right: 0;
+          &:last-child{
+            margin-bottom: 0;
+          }
         }
       }
     }
